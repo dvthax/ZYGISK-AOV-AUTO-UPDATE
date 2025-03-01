@@ -14,6 +14,15 @@
 
 ---
 
+## ❓ What is AOV? | ❓ AOV là gì? | ❓ AOV 是什么？  
+**AOV (Arena of Valor)** is a popular MOBA game, also known as **Liên Quân Mobile** in Vietnam and other regions. This module helps you keep **AOV always updated** on **Zygisk** automatically.  
+
+**AOV (Arena of Valor)** là một tựa game MOBA phổ biến, còn được gọi là **Liên Quân Mobile** tại Việt Nam và nhiều khu vực khác. Module này giúp bạn **luôn cập nhật AOV tự động** trên **Zygisk**.  
+
+**AOV (Arena of Valor)** 是一款流行的 MOBA 游戏，在越南等地区被称为 **Liên Quân Mobile**。此模块可帮助您 **在 Zygisk 上自动更新 AOV**。  
+
+---
+
 ## 🇺🇸 English  
 
 ### 📌 Introduction  
@@ -34,27 +43,9 @@
 3️⃣ Reboot your device  
 4️⃣ Enjoy **auto-updated AOV!**  
 
-### 🔄 Auto Update  
-✅ This module will **automatically check for the latest AOV version** and update it if necessary.  
-✅ No manual work needed!  
-
 ### 🚀 Support & Contact  
 📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
 🌍 Github: [dvtlive](https://github.com/dvtlive)  
-
-### 💖 Donate  
-If you find this project useful, you can support me via:  
-🔹 **Momo:** `0332590853`  
-🔹 **MB Bank:** `200105555`  
-🔹 **Binance ID:** `736830628`  
-🔹 **ETH Crypto Wallet:** `0x6d89542c303ba8b8fa6e8752c4e53360fe32a9ec`  
-
-💡 **Every donation helps this project grow!**  
-
-### 📜 License  
-📄 **MIT License** – Free to use!  
-
-🔥 **Thank you for using Zygisk AOV Auto Update!** 🔥  
 
 ---
 
@@ -78,27 +69,9 @@ If you find this project useful, you can support me via:
 3️⃣ Khởi động lại thiết bị  
 4️⃣ Tận hưởng **AOV luôn được cập nhật tự động!**  
 
-### 🔄 Cập nhật tự động  
-✅ Module này sẽ **tự động kiểm tra phiên bản AOV mới nhất** và cập nhật nếu cần thiết.  
-✅ Bạn không cần làm gì cả!  
-
 ### 🚀 Hỗ trợ & Liên hệ  
 📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
 🌍 Github: [dvtlive](https://github.com/dvtlive)  
-
-### 💖 Ủng hộ  
-Nếu bạn thấy dự án này hữu ích, hãy ủng hộ mình qua:  
-🔹 **Momo:** `0332590853`  
-🔹 **MB Bank:** `200105555`  
-🔹 **Binance ID:** `736830628`  
-🔹 **ETH Crypto Wallet:** `0x6d89542c303ba8b8fa6e8752c4e53360fe32a9ec`  
-
-💡 **Mọi sự ủng hộ đều giúp dự án phát triển mạnh mẽ hơn!**  
-
-### 📜 Giấy phép  
-📄 **MIT License** – Tự do sử dụng!  
-
-🔥 **Cảm ơn bạn đã sử dụng Zygisk AOV Auto Update!** 🔥  
 
 ---
 
@@ -122,24 +95,6 @@ Nếu bạn thấy dự án này hữu ích, hãy ủng hộ mình qua:
 3️⃣ 重新启动设备  
 4️⃣ 享受 **自动更新的 AOV！**  
 
-### 🔄 自动更新  
-✅ 该模块将 **自动检查最新的 AOV 版本**，并在必要时进行更新。  
-✅ 无需手动操作！  
-
 ### 🚀 支持与联系  
 📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
 🌍 Github: [dvtlive](https://github.com/dvtlive)  
-
-### 💖 捐赠  
-如果你觉得这个项目有用，你可以通过以下方式支持我：  
-🔹 **Momo:** `0332590853`  
-🔹 **MB Bank:** `200105555`  
-🔹 **Binance ID:** `736830628`  
-🔹 **ETH Crypto Wallet:** `0x6d89542c303ba8b8fa6e8752c4e53360fe32a9ec`  
-
-💡 **每一份捐赠都将帮助这个项目成长！**  
-
-### 📜 许可  
-📄 **MIT License** – 自由使用！  
-
-🔥 **感谢您使用 Zygisk AOV Auto Update！** 🔥  
