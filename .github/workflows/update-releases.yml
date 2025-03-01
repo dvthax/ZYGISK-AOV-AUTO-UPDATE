@@ -53,18 +53,21 @@ jobs:
 
       - name: Update README for English
         run: |
-          sed -i '/#### 📦 Releases Table/,/---/ { /#### 📦 Releases Table/ {r releases-table-en.md
-          }; d; }' README.md
+          # Xóa nội dung cũ từ "#### 📦 Releases Table" đến trước phần "---" tiếp theo
+          sed -i '/#### 📦 Releases Table/{p; r releases-table-en.md
+          }; /#### 📦 Releases Table/,/---/d' README.md
 
       - name: Update README for Vietnamese
         run: |
-          sed -i '/#### 📦 Bảng Các Bản Phát Hành/,/---/ { /#### 📦 Bảng Các Bản Phát Hành/ {r releases-table-vi.md
-          }; d; }' README.md
+          # Xóa nội dung cũ từ "#### 📦 Bảng Các Bản Phát Hành" đến trước phần "---" tiếp theo
+          sed -i '/#### 📦 Bảng Các Bản Phát Hành/{p; r releases-table-vi.md
+          }; /#### 📦 Bảng Các Bản Phát Hành/,/---/d' README.md
 
       - name: Update README for Chinese
         run: |
-          sed -i '/#### 📦 版本发布表/,/---/ { /#### 📦 版本发布表/ {r releases-table-zh.md
-          }; d; }' README.md
+          # Xóa nội dung cũ từ "#### 📦 版本发布表" đến trước phần "---" tiếp theo
+          sed -i '/#### 📦 版本发布表/{p; r releases-table-zh.md
+          }; /#### 📦 版本发布表/,/---/d' README.md
           cat README.md
 
       - name: Commit and Push Changes
