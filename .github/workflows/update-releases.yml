@@ -1,0 +1,78 @@
+name: Update Releases Table
+
+on:
+  push: # Chạy khi có push
+  schedule:
+    - cron: '0 0 * * *' # Chạy hàng ngày lúc nửa đêm UTC
+  workflow_dispatch: # Cho phép kích hoạt thủ công
+  release: # Chạy khi có thay đổi liên quan đến release
+    types: [created, edited, deleted, published, unpublished] # Các hành động release sẽ kích hoạt
+
+jobs:
+  update-releases:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Fetch Releases
+        id: fetch-releases
+        run: |
+          curl -s -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases \
+            > releases.json
+
+      - name: Generate Releases Tables for All Languages
+        run: |
+          # English Table
+          echo "#### 📦 Releases Table" > releases-table-en.md
+          echo "" >> releases-table-en.md
+          echo "| Version | Release Date | Download |" >> releases-table-en.md
+          echo "|---------|--------------|----------|" >> releases-table-en.md
+          jq -r '.[] | select(.draft == false and .prerelease == false) | "| [\(.tag_name)](\(.html_url)) | \(.published_at[0:10]) | [![Download \(.tag_name)](https://img.shields.io/badge/Download-\(.tag_name)-green)](\(.assets[0].browser_download_url)) |"' releases.json >> releases-table-en.md
+          echo "" >> releases-table-en.md
+          echo "*This table is dynamically generated using GitHub Actions.*" >> releases-table-en.md
+
+          # Vietnamese Table
+          echo "#### 📦 Bảng Các Bản Phát Hành" > releases-table-vi.md
+          echo "" >> releases-table-vi.md
+          echo "| Phiên bản | Ngày phát hành | Tải xuống |" >> releases-table-vi.md
+          echo "|-----------|----------------|----------|" >> releases-table-vi.md
+          jq -r '.[] | select(.draft == false and .prerelease == false) | "| [\(.tag_name)](\(.html_url)) | \(.published_at[0:10]) | [![Tải xuống \(.tag_name)](https://img.shields.io/badge/Tải_xuống-\(.tag_name)-green)](\(.assets[0].browser_download_url)) |"' releases.json >> releases-table-vi.md
+          echo "" >> releases-table-vi.md
+          echo "*(Bảng này được tạo tự động bằng GitHub Actions.)*" >> releases-table-vi.md
+
+          # Chinese Table
+          echo "#### 📦 版本发布表" > releases-table-zh.md
+          echo "" >> releases-table-zh.md
+          echo "| 版本    | 发布日期   | 下载 |" >> releases-table-zh.md
+          echo "|---------|------------|------|" >> releases-table-zh.md
+          jq -r '.[] | select(.draft == false and .prerelease == false) | "| [\(.tag_name)](\(.html_url)) | \(.published_at[0:10]) | [![下载 \(.tag_name)](https://img.shields.io/badge/下载-\(.tag_name)-green)](\(.assets[0].browser_download_url)) |"' releases.json >> releases-table-zh.md
+          echo "" >> releases-table-zh.md
+          echo "*(此表使用 GitHub Actions 动态生成。)*" >> releases-table-zh.md
+
+      - name: Update README for English
+        run: |
+          sed -i '/#### 📦 Releases Table/,/---/ { /#### 📦 Releases Table/ {r releases-table-en.md
+          }; d; }' README.md
+
+      - name: Update README for Vietnamese
+        run: |
+          sed -i '/#### 📦 Bảng Các Bản Phát Hành/,/---/ { /#### 📦 Bảng Các Bản Phát Hành/ {r releases-table-vi.md
+          }; d; }' README.md
+
+      - name: Update README for Chinese
+        run: |
+          sed -i '/#### 📦 版本发布表/,/---/ { /#### 📦 版本发布表/ {r releases-table-zh.md
+          }; d; }' README.md
+          cat README.md
+
+      - name: Commit Changes
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add README.md
+          git commit -m "Update releases tables for all languages - Triggered by ${GITHUB_EVENT_NAME}" || echo "No changes to commit"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
