@@ -16,13 +16,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           persist-credentials: false
+          fetch-depth: 0  # Lấy toàn bộ lịch sử commit để tránh lỗi merge
 
       - name: Get latest release info
         run: |
           LATEST_TAG="${{ github.event.release.tag_name }}"
           VERSION_CODE=$(date +%s)
-          ZIP_URL="https://github.com/${{ github.repository }}/releases/latest/download/zygisk-detach-${LATEST_TAG}.zip"
-          CHANGELOG="https://raw.githubusercontent.com/${{ github.repository }}/master/README.md"
+          ZIP_URL="https://github.com/${{ github.repository }}/releases/latest/download/ZYGISK-AOV-AUTO-UPDATE-${LATEST_TAG}.zip"
+          CHANGELOG="https://raw.githubusercontent.com/${{ github.repository }}/main/README.md"
 
           echo "{
             \"version\": \"${LATEST_TAG}\",
@@ -35,13 +36,13 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout main  # Đảm bảo đang làm việc trên branch main
+          git pull origin main --rebase  # Đồng bộ với remote trước khi push
+          
           git add update.json
           git commit -m "Update update.json for $LATEST_TAG" || exit 0
-          
-          # Pull latest changes to avoid conflicts
-          git pull --rebase https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
-          
-          # Push the changes
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
