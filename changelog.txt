@@ -1,7 +1,7 @@
 # 🔥 Zygisk AOV Hack - Phiên bản 1.0  
 
 ![GitHub Release](https://img.shields.io/github/v/release/dvtlive/ZYGISK-AOV-AUTO-UPDATE?style=for-the-badge)  
-![GitHub Downloads](https://img.shields.io/github/downloads/dvtlive/ZYGISK-AOV-AUTO-UPDATE/total?color=blue&style=for-the-badge)  
+![GitHub Downloads](https://img.shields.io/github/downloads/dvtlive/ZYGISK-AOV-AUTO-UPDATE/latest/total?color=blue&style=for-the-badge)  
 ![GitHub Stars](https://img.shields.io/github/stars/dvtlive/ZYGISK-AOV-AUTO-UPDATE?style=for-the-badge)  
 
 > 🚀 **Hack mạnh mẽ dành cho Liên Quân Mobile (AOV), hoạt động trên Magisk & Zygisk!**  
@@ -11,14 +11,14 @@
 
 ## **🛠 Tính năng trong phiên bản 1.0**  
 
-✅ **Hack Map** – Hiển thị toàn bộ tướng địch trên bản đồ  ( Tự động bật khi vào game)
+✅ **Hack Map** – Hiển thị toàn bộ tướng địch trên bản đồ (Tự động bật khi vào game)  
 
 🔹 **Cập nhật tự động:** Không cần tải lại thủ công  
 🔹 **Ẩn dấu vết:** Giảm thiểu nguy cơ bị phát hiện  
 🔹 **Hiệu suất tối ưu:** Không ảnh hưởng FPS  
 
 🚧 **Tính năng sắp có trong bản cập nhật tiếp theo:**  
-- 🏹 **Aim Skill** – Tung chiều tự động trúng kẻ địch
+- 🏹 **Aim Skill** – Tung chiêu tự động trúng kẻ địch  
 - 🎯 **Esp** – Vẽ esp trên màn hình  
 
 ---
@@ -48,9 +48,8 @@
 
 ### **🔒 Cảnh báo quan trọng**  
 ❗ **Việc sử dụng hack có thể vi phạm điều khoản dịch vụ của game.**  
-❗ **Hack sẽ không an toàn 100%. Bạn nên sử dụng tài khoản phụ đee thử nghiệm trước khi quyết định!**  
+❗ **Hack sẽ không an toàn 100%. Bạn nên sử dụng tài khoản phụ để thử nghiệm trước khi quyết định!**  
 
 ---
 
 💡 **Thích bản hack này?** Đừng quên **Follow & Star** repo để nhận cập nhật mới nhất! 🚀✨  
-
