@@ -23,13 +23,13 @@ jobs:
           VERSION="${{ github.event.release.tag_name }}"
           VERSION_CODE=$(git rev-list --count HEAD)
           ZIP_URL="https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/${VERSION}/DVTMOD-ZYGISK-${VERSION}.zip"
-          CHANGELOG="${{ github.event.release.body }}"
+          CHANGELOG_URL="${{ github.event.release.html_url }}"
 
           jq -n \
             --arg version "$VERSION" \
             --argjson versionCode "$VERSION_CODE" \
             --arg zipUrl "$ZIP_URL" \
-            --arg changelog "$CHANGELOG" \
+            --arg changelog "$CHANGELOG_URL" \
             '{version: $version, versionCode: $versionCode, zipUrl: $zipUrl, changelog: $changelog}' > update.json
 
       - name: Commit and push update.json
@@ -37,11 +37,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add update.json
-          # Commit trước để làm sạch index
           git diff --staged --quiet || git commit -m "Stage update.json for release ${{ github.event.release.tag_name }}"
-          # Pull với rebase sau khi đã commit
           git pull --rebase origin main
-          # Push kết quả lên remote
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
