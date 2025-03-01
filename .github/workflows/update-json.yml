@@ -22,11 +22,9 @@ jobs:
         run: |
           VERSION="${{ github.event.release.tag_name }}"
           VERSION_CODE=$(git rev-list --count HEAD)
-          # Tạo zipUrl dựa trên tag của release
           ZIP_URL="https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/${VERSION}/DVTMOD-ZYGISK-${VERSION}.zip"
           CHANGELOG="${{ github.event.release.body }}"
 
-          # Sử dụng jq để tạo JSON hợp lệ
           jq -n \
             --arg version "$VERSION" \
             --argjson versionCode "$VERSION_CODE" \
