@@ -1,47 +1,48 @@
-name: Generate update.json on Release
+name: Update JSON on Release
+
+# Trigger workflow khi có sự kiện liên quan đến release
 on:
   release:
-    types: [published]
-
-permissions:
-  contents: write
+    types: [created, edited, deleted, published, unpublished, prereleased, released]
 
 jobs:
   update-json:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout repository để truy cập code
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-          fetch-depth: 0  # Lấy toàn bộ lịch sử commit để tránh lỗi merge
 
-      - name: Get latest release info
+      # Lấy thông tin release từ GitHub context
+      - name: Generate update.json
         run: |
-          LATEST_TAG="${{ github.event.release.tag_name }}"
-          VERSION_CODE=$(date +%s)
-          ZIP_URL="https://github.com/${{ github.repository }}/releases/latest/download/ZYGISK-AOV-AUTO-UPDATE-${LATEST_TAG}.zip"
-          CHANGELOG="https://raw.githubusercontent.com/${{ github.repository }}/main/README.md"
+          # Lấy version từ tag của release
+          VERSION="${{ github.event.release.tag_name }}"
+          # Tính versionCode (ví dụ: dựa vào số commit hoặc tự tăng)
+          VERSION_CODE=$(git rev-list --count HEAD)
+          # Lấy URL của file zip (nếu có, ở đây để trống)
+          ZIP_URL=""
+          # Lấy changelog từ body của release
+          CHANGELOG="${{ github.event.release.body }}"
 
-          echo "{
-            \"version\": \"${LATEST_TAG}\",
-            \"versionCode\": ${VERSION_CODE},
-            \"zipUrl\": \"${ZIP_URL}\",
-            \"changelog\": \"${CHANGELOG}\"
-          }" > update.json
+          # Tạo nội dung JSON
+          cat <<EOF > update.json
+          {
+            "version": "$VERSION",
+            "versionCode": $VERSION_CODE,
+            "zipUrl": "$ZIP_URL",
+            "changelog": "$CHANGELOG"
+          }
+          EOF
 
-      - name: Commit and push update.json
+      # Commit và push file update.json nếu có thay đổi
+      - name: Commit update.json
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          git checkout main  # Đảm bảo đang làm việc trên branch main
-          git pull origin main --rebase  # Đồng bộ với remote trước khi push
-          
           git add update.json
-          git commit -m "Update update.json for $LATEST_TAG" || exit 0
-
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
+          git diff --staged --quiet || git commit -m "Update update.json for release $VERSION"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
