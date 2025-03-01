@@ -1,48 +1,43 @@
 name: Update JSON on Release
 
-# Trigger workflow khi có sự kiện liên quan đến release
 on:
   release:
     types: [created, edited, deleted, published, unpublished, prereleased, released]
+
+# Quyền cần thiết để ghi vào repository
+permissions:
+  contents: write
 
 jobs:
   update-json:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repository để truy cập code
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Lấy thông tin release từ GitHub context
       - name: Generate update.json
         run: |
-          # Lấy version từ tag của release
           VERSION="${{ github.event.release.tag_name }}"
-          # Tính versionCode (ví dụ: dựa vào số commit hoặc tự tăng)
           VERSION_CODE=$(git rev-list --count HEAD)
-          # Lấy URL của file zip (nếu có, ở đây để trống)
           ZIP_URL=""
-          # Lấy changelog từ body của release
           CHANGELOG="${{ github.event.release.body }}"
 
-          # Tạo nội dung JSON
-          cat <<EOF > update.json
-          {
-            "version": "$VERSION",
-            "versionCode": $VERSION_CODE,
-            "zipUrl": "$ZIP_URL",
-            "changelog": "$CHANGELOG"
-          }
-          EOF
+          # Đảm bảo JSON hợp lệ bằng jq
+          jq -n \
+            --arg version "$VERSION" \
+            --argjson versionCode "$VERSION_CODE" \
+            --arg zipUrl "$ZIP_URL" \
+            --arg changelog "$CHANGELOG" \
+            '{version: $version, versionCode: $versionCode, zipUrl: $zipUrl, changelog: $changelog}' > update.json
 
-      # Commit và push file update.json nếu có thay đổi
       - name: Commit update.json
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add update.json
-          git diff --staged --quiet || git commit -m "Update update.json for release $VERSION"
-          git push
+          git diff --staged --quiet || (git commit -m "Update update.json for release ${{ github.event.release.tag_name }}" && git push)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
