@@ -80,10 +80,10 @@ If you find this project useful, you can support me via:
 Nếu bạn thấy dự án này hữu ích, hãy ủng hộ mình qua:  
 如果你觉得这个项目有用，你可以通过以下方式支持我：  
 
-🔹 **Momo:** `SĐT của bạn`  
-🔹 **MB Bank:** `Số tài khoản của bạn`  
-🔹 **Binance ID:** `Binance ID của bạn`  
-🔹 **Crypto Wallet:** `Địa chỉ ví (BTC/ETH/USDT,...) của bạn`  
+🔹 **Momo:** `0332590853`  
+🔹 **MB Bank:** `200105555`  
+🔹 **Binance ID:** `736830628`  
+🔹 **ETH Crypto Wallet:** `0x6d89542c303ba8b8fa6e8752c4e53360fe32a9ec`  
 
 💡 **Every donation helps this project grow!**  
 💡 **Mọi sự ủng hộ đều giúp dự án phát triển mạnh mẽ hơn!**  
@@ -92,9 +92,9 @@ Nếu bạn thấy dự án này hữu ích, hãy ủng hộ mình qua:
 ---
 
 ## 📜 License | 📜 Giấy phép | 📜 许可  
-📄 **MIT License** – Free to use, modify, and develop!  
-📄 **MIT License** – Tự do sử dụng, chỉnh sửa và phát triển!  
-📄 **MIT License** – 自由使用、修改和开发！  
+📄 **MIT License** – Free to use!  
+📄 **MIT License** – Tự do sử dụng!  
+📄 **MIT License** – 自用！  
 
 🔥 **Thank you for using Zygisk AOV Auto Update!** 🔥  
 🔥 **Cảm ơn bạn đã sử dụng Zygisk AOV Auto Update!** 🔥  
