@@ -7,29 +7,18 @@
 
 ---
 
-## 🌍 Language | 🌍 Ngôn ngữ | 🌍 语言  
-🔹 [English](#-english)  
-🔹 [Tiếng Việt](#-tiếng-việt)  
-🔹 [中文](#-中文)  
+## 🌍 Language | Ngôn ngữ | 语言  
+🔹 [English](#english)  
+🔹 [Tiếng Việt](#tiếng-việt)  
+🔹 [中文](#中文)  
 
 ---
 
-## ❓ What is AOV Hack? | ❓ Hack AOV là gì? | ❓ AOV Hack 是什么？  
+## English
+
+### ❓ What is AOV Hack?  
 **AOV (Arena of Valor)** is a popular MOBA game, also known as **Liên Quân Mobile** in Vietnam and other regions.  
-
 This module provides **a powerful hack for AOV** on **Zygisk**, allowing you to use various cheats while ensuring that **the hack is always updated** to work with the latest version of the game.  
-
-**AOV (Arena of Valor)** là một tựa game MOBA phổ biến, còn được gọi là **Liên Quân Mobile** tại Việt Nam và nhiều khu vực khác.  
-
-Module này cung cấp **hack AOV mạnh mẽ** trên **Zygisk**, giúp bạn sử dụng các cheat khác nhau mà không lo bị lỗi, vì **hack sẽ tự động cập nhật** để hoạt động với phiên bản mới nhất của game.  
-
-**AOV (Arena of Valor)** 是一款流行的 MOBA 游戏，在越南等地区被称为 **Liên Quân Mobile**。  
-
-此模块提供 **AOV 的强大外挂**，可以在 **Zygisk** 上运行，并确保 **外挂始终自动更新**，以适应最新的游戏版本。  
-
----
-
-## 🇺🇸 English  
 
 ### 📌 Features  
 - **Powerful Hack** – Unlock advanced cheats for AOV.  
@@ -53,9 +42,38 @@ Module này cung cấp **hack AOV mạnh mẽ** trên **Zygisk**, giúp bạn s�
 📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
 🌍 Github: [dvtlive](https://github.com/dvtlive)  
 
+### Supported Servers List - Arena of Valor (AOV)  
+This application supports various versions of Arena of Valor (AOV) from different regions. Below is the list of supported servers:  
+
+#### 🌍 Supported Servers List  
+| Region                  | Package Name               |  
+|-------------------------|----------------------------|  
+| 🇪🇺 **Europe**        | `com.ngame.allstar.eu`    |  
+| 🇮🇳 **India**         | `com.ngame.allstar.india` |  
+| 🇹🇼 **Taiwan**       | `com.garena.game.kgtw`    |  
+| 🇹🇭 **Thailand**     | `com.garena.game.kgth`    |  
+| 🇻🇳 **Vietnam**      | `com.garena.game.kgvn`    |  
+| 🇯🇵 **Japan**        | `com.tencent.ngjp`        |  
+| 🇸🇬 **Southeast Asia**| `com.garena.game.kgsam`   |  
+| 🇨🇳 **Test Server (China)** | `com.tencent.ngame.chty` |  
+
+#### ⚠️ Notes  
+- The **Honor of Kings** _(王者荣耀)_ version is not supported.  
+- These servers may change with updates. If you encounter any issues, please contact us for support.  
+
+### Releases  
+Below is a table listing the available releases for the **Zygisk AOV Auto Update** module, dynamically fetched from the GitHub repository. Click on the version number to view release details or use the download button to get the module file directly.  
+
+#### 📦 Releases Table  
+(This table is dynamically generated using GitHub Actions or a similar automation tool. See the automation explanation at the bottom of this document.)  
+
 ---
 
-## 🇻🇳 Tiếng Việt  
+## Tiếng Việt
+
+### ❓ Hack AOV là gì?  
+**AOV (Arena of Valor)** là một tựa game MOBA phổ biến, còn được gọi là **Liên Quân Mobile** tại Việt Nam và nhiều khu vực khác.  
+Module này cung cấp **hack AOV mạnh mẽ** trên **Zygisk**, giúp bạn sử dụng các cheat khác nhau mà không lo bị lỗi, vì **hack sẽ tự động cập nhật** để hoạt động với phiên bản mới nhất của game.  
 
 ### 📌 Tính năng  
 - **Hack AOV mạnh mẽ** – Mở khóa các cheat nâng cao cho Liên Quân Mobile.  
@@ -79,9 +97,38 @@ Module này cung cấp **hack AOV mạnh mẽ** trên **Zygisk**, giúp bạn s�
 📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
 🌍 Github: [dvtlive](https://github.com/dvtlive)  
 
+### Danh Sách Server Hỗ Trợ - Arena of Valor (AOV)  
+Ứng dụng này hỗ trợ các phiên bản Arena of Valor (AOV) từ nhiều khu vực khác nhau. Dưới đây là danh sách các server được phép sử dụng:  
+
+#### 🌍 Danh Sách Server Hỗ Trợ  
+| Khu Vực                 | Tên Gói (Package)          |  
+|-------------------------|----------------------------|  
+| 🇪🇺 **Châu Âu**       | `com.ngame.allstar.eu`    |  
+| 🇮🇳 **Ấn Độ**        | `com.ngame.allstar.india` |  
+| 🇹🇼 **Đài Loan**     | `com.garena.game.kgtw`    |  
+| 🇹🇭 **Thái Lan**     | `com.garena.game.kgth`    |  
+| 🇻🇳 **Việt Nam**     | `com.garena.game.kgvn`    |  
+| 🇯🇵 **Nhật Bản**     | `com.tencent.ngjp`        |  
+| 🇸🇬 **Đông Nam Á**   | `com.garena.game.kgsam`   |  
+| 🇨🇳 **Máy chủ thử nghiệm (Trung Quốc)** | `com.tencent.ngame.chty` |  
+
+#### ⚠️ Lưu Ý  
+- Phiên bản **Honor of Kings** _(王者荣耀)_ không được hỗ trợ.  
+- Các server này có thể thay đổi theo từng bản cập nhật. Nếu có bất kỳ vấn đề gì, vui lòng liên hệ để được hỗ trợ.  
+
+### Các Bản Phát Hành  
+Dưới đây là bảng liệt kê các bản phát hành có sẵn cho module **Zygisk AOV Auto Update**, được tự động lấy từ kho lưu trữ GitHub. Nhấp vào số phiên bản để xem chi tiết bản phát hành hoặc sử dụng nút tải xuống để lấy tệp module trực tiếp.  
+
+#### 📦 Bảng Các Bản Phát Hành  
+(Bảng này được tạo tự động bằng GitHub Actions hoặc công cụ tự động hóa tương tự. Xem phần giải thích tự động hóa ở cuối tài liệu này.)  
+
 ---
 
-## 🇨🇳 中文  
+## 中文
+
+### ❓ AOV Hack 是什么？  
+**AOV (Arena of Valor)** 是一款流行的 MOBA 游戏，在越南等地区被称为 **Liên Quân Mobile**。  
+此模块提供 **AOV 的强大外挂**，可以在 **Zygisk** 上运行，并确保 **外挂始终自动更新**，以适应最新的游戏版本。  
 
 ### 📌 功能  
 - **强大外挂** – 解锁 AOV 的高级作弊功能。  
@@ -104,3 +151,30 @@ Module này cung cấp **hack AOV mạnh mẽ** trên **Zygisk**, giúp bạn s�
 ### 🚀 支持与联系  
 📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
 🌍 Github: [dvtlive](https://github.com/dvtlive)  
+
+### 支持的服务器列表 - Arena of Valor (AOV)  
+此应用程序支持来自不同地区的多种 Arena of Valor (AOV) 版本。以下是支持的服务器列表：  
+
+#### 🌍 支持的服务器列表  
+| 地区                    | 包名 (Package Name)        |  
+|-------------------------|----------------------------|  
+| 🇪🇺 **欧洲**         | `com.ngame.allstar.eu`    |  
+| 🇮🇳 **印度**         | `com.ngame.allstar.india` |  
+| 🇹🇼 **台湾**        | `com.garena.game.kgtw`    |  
+| 🇹🇭 **泰国**        | `com.garena.game.kgth`    |  
+| 🇻🇳 **越南**        | `com.garena.game.kgvn`    |  
+| 🇯🇵 **日本**        | `com.tencent.ngjp`        |  
+| 🇸🇬 **东南亚**      | `com.garena.game.kgsam`   |  
+| 🇨🇳 **测试服务器 (中国)** | `com.tencent.ngame.chty` |  
+
+#### ⚠️ 注意  
+- **Honor of Kings** _(王者荣耀)_ 版本不受支持。  
+- 这些服务器可能会随更新而变化。如有任何问题，请联系我们以获取支持。  
+
+### 版本发布  
+以下是 **Zygisk AOV Auto Update** 模块的可用版本列表，从 GitHub 仓库中动态获取。点击版本号查看发布详情，或使用下载按钮直接获取模块文件。  
+
+#### 📦 版本发布表  
+(此表使用 GitHub Actions 或类似自动化工具动态生成。请参阅文档末尾的自动化说明。)  
+
+---
