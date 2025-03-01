@@ -2,5 +2,5 @@
   "version": "1.0",
   "versionCode": 1,
   "zipUrl": "https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip",
-  "changelog": "https://raw.githubusercontent.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/main/changelog.txt"
+  "changelog": "https://raw.githubusercontent.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/refs/heads/main/changelog.txt"
 }
