@@ -1,43 +1,52 @@
-name: Update JSON on Release
+name: Cập nhật update.json khi có release mới
 
 on:
   release:
     types: [created, edited, deleted, published, unpublished, prereleased, released]
 
-# Quyền cần thiết để ghi vào repository
-permissions:
-  contents: write
-
 jobs:
   update-json:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
+
+      - name: Lấy thông tin release mới nhất
+        id: get_release
+        uses: actions/github-script@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const latestRelease = await github.repos.getLatestRelease({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            });
+            return {
+              tag_name: latestRelease.data.tag_name,
+              name: latestRelease.data.name,
+              body: latestRelease.data.body,
+              assets: latestRelease.data.assets,
+            };
 
-      - name: Generate update.json
+      - name: Tạo tệp update.json
+        id: create_json
         run: |
-          VERSION="${{ github.event.release.tag_name }}"
-          VERSION_CODE=$(git rev-list --count HEAD)
-          ZIP_URL=""
-          CHANGELOG="${{ github.event.release.body }}"
+          VERSION=${{ steps.get_release.outputs.tag_name }}
+          VERSION_CODE=$(echo $VERSION | sed 's/v//g' | awk -F. '{ print ($1 * 10000) + ($2 * 100) + $3 }')
+          ZIP_URL=${{ steps.get_release.outputs.assets[0].browser_download_url }}
+          CHANGELOG=${{ steps.get_release.outputs.body }}
+          cat <<EOF > update.json
+          {
+            "version": "$VERSION",
+            "versionCode": $VERSION_CODE,
+            "zipUrl": "$ZIP_URL",
+            "changelog": "$CHANGELOG"
+          }
+          EOF
 
-          # Đảm bảo JSON hợp lệ bằng jq
-          jq -n \
-            --arg version "$VERSION" \
-            --argjson versionCode "$VERSION_CODE" \
-            --arg zipUrl "$ZIP_URL" \
-            --arg changelog "$CHANGELOG" \
-            '{version: $version, versionCode: $versionCode, zipUrl: $zipUrl, changelog: $changelog}' > update.json
-
-      - name: Commit update.json
+      - name: Commit và đẩy tệp update.json
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add update.json
-          git diff --staged --quiet || (git commit -m "Update update.json for release ${{ github.event.release.tag_name }}" && git push)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git commit -m "Cập nhật update.json cho phiên bản ${{ steps.get_release.outputs.tag_name }}"
+          git push origin HEAD:main
