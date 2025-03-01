@@ -14,14 +14,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: false
 
       - name: Get latest release info
         run: |
-          LATEST_TAG=${{ github.event.release.tag_name }}
+          LATEST_TAG="${{ github.event.release.tag_name }}"
           VERSION_CODE=$(date +%s)
           ZIP_URL="https://github.com/${{ github.repository }}/releases/latest/download/zygisk-detach-${LATEST_TAG}.zip"
           CHANGELOG="https://raw.githubusercontent.com/${{ github.repository }}/master/README.md"
-          
+
           echo "{
             \"version\": \"${LATEST_TAG}\",
             \"versionCode\": ${VERSION_CODE},
@@ -34,5 +36,7 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add update.json
-          git commit -m "Update update.json for $LATEST_TAG"
-          git push
+          git commit -m "Update update.json for $LATEST_TAG" || exit 0
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
