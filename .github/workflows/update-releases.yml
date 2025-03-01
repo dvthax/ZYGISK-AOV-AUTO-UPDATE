@@ -51,30 +51,32 @@ jobs:
           echo "" >> releases-table-zh.md
           echo "*(此表使用 GitHub Actions 动态生成。)*" >> releases-table-zh.md
 
-      - name: Update README for English
+      - name: Update README with Generated Tables
         run: |
-          # Xóa nội dung cũ từ "#### 📦 Releases Table" đến trước phần "---" tiếp theo
-          sed -i '/#### 📦 Releases Table/{p; r releases-table-en.md
-          }; /#### 📦 Releases Table/,/---/d' README.md
+          # Tạo bản sao tạm thời của README.md
+          cp README.md README_temp.md
 
-      - name: Update README for Vietnamese
-        run: |
-          # Xóa nội dung cũ từ "#### 📦 Bảng Các Bản Phát Hành" đến trước phần "---" tiếp theo
-          sed -i '/#### 📦 Bảng Các Bản Phát Hành/{p; r releases-table-vi.md
-          }; /#### 📦 Bảng Các Bản Phát Hành/,/---/d' README.md
+          # Chèn bảng tiếng Anh
+          sed -i '/#### 📦 Releases Table/{r releases-table-en.md
+          d;}; /#### 📦 Releases Table/{n; d; q;}; /#### 📦 Releases Table/q' README_temp.md
 
-      - name: Update README for Chinese
-        run: |
-          # Xóa nội dung cũ từ "#### 📦 版本发布表" đến trước phần "---" tiếp theo
-          sed -i '/#### 📦 版本发布表/{p; r releases-table-zh.md
-          }; /#### 📦 版本发布表/,/---/d' README.md
+          # Chèn bảng tiếng Việt
+          sed -i '/#### 📦 Bảng Các Bản Phát Hành/{r releases-table-vi.md
+          d;}; /#### 📦 Bảng Các Bản Phát Hành/{n; d; q;}; /#### 📦 Bảng Các Bản Phát Hành/q' README_temp.md
+
+          # Chèn bảng tiếng Trung
+          sed -i '/#### 📦 版本发布表/{r releases-table-zh.md
+          d;}; /#### 📦 版本发布表/{n; d; q;}; /#### 📦 版本发布表/q' README_temp.md
+
+          # Ghi đè README.md bằng file tạm thời đã chỉnh sửa
+          mv README_temp.md README.md
           cat README.md
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add README.md
+          git add README.md releases-table-en.md releases-table-vi.md releases-table-zh.md
           git commit -m "Update releases tables for all languages - Triggered by ${GITHUB_EVENT_NAME}" || echo "No changes to commit"
           git pull --rebase # Kéo thay đổi từ remote và rebase commit của chúng ta
           git push
