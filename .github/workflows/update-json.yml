@@ -21,14 +21,15 @@ jobs:
       - name: Generate changelog.txt and update.json
         run: |
           VERSION="${{ github.event.release.tag_name }}"
-          VERSION_CODE=$(git rev-list --count HEAD)
+          # Dùng timestamp hiện tại (Unix seconds) làm versionCode
+          VERSION_CODE=$(date +%s)
           ZIP_URL="https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/${VERSION}/DVTMOD-ZYGISK-${VERSION}.zip"
           CHANGELOG_URL="https://raw.githubusercontent.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/refs/heads/main/changelog.txt"
 
           # Lưu nội dung changelog dạng raw text vào changelog.txt
           echo "${{ github.event.release.body }}" > changelog.txt
 
-          # Tạo update.json với URL trỏ đến changelog.txt
+          # Tạo update.json với versionCode là timestamp
           jq -n \
             --arg version "$VERSION" \
             --argjson versionCode "$VERSION_CODE" \
