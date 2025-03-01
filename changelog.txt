@@ -23,6 +23,22 @@
 
 ---
 
+# Danh Sách Server Hỗ Trợ - Arena of Valor (AOV)
+
+Ứng dụng này hỗ trợ các phiên bản Arena of Valor (AOV) từ nhiều khu vực khác nhau. Dưới đây là danh sách các server được phép sử dụng:
+
+## 🌍 Danh Sách Server Hỗ Trợ
+
+| Khu Vực                 | Tên Gói (Package)            |
+|-------------------------|-----------------------------|
+| 🇻🇳 **Việt Nam**      |      |
+
+## ⚠️ Lưu Ý
+- Phiên bản **Honor of Kings** _(王者荣耀)_ không được hỗ trợ.  
+- Các server này có thể thay đổi theo từng bản cập nhật. Nếu có bất kỳ vấn đề gì, vui lòng liên hệ để được hỗ trợ.
+
+---
+
 ## **📥 Cách cài đặt**  
 
 1️⃣ **Tải file hack mới nhất:**  
