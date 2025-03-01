@@ -72,6 +72,10 @@ Below is a table listing the available releases for the **Zygisk AOV Auto Update
 | [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Download 1.0](https://img.shields.io/badge/Download-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
 
 *This table is dynamically generated using GitHub Actions.*
+| [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![Download 1.1](https://img.shields.io/badge/Download-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
+| [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Download 1.0](https://img.shields.io/badge/Download-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
+
+*This table is dynamically generated using GitHub Actions.*
 
 ## Tiếng Việt
 
@@ -131,6 +135,10 @@ Dưới đây là bảng liệt kê các bản phát hành có sẵn cho module 
 | [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Tải xuống 1.0](https://img.shields.io/badge/Tải_xuống-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
 
 *(Bảng này được tạo tự động bằng GitHub Actions.)*
+| [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![Tải xuống 1.1](https://img.shields.io/badge/Tải_xuống-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
+| [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Tải xuống 1.0](https://img.shields.io/badge/Tải_xuống-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
+
+*(Bảng này được tạo tự động bằng GitHub Actions.)*
 
 ## 中文
 
@@ -186,6 +194,10 @@ Dưới đây là bảng liệt kê các bản phát hành có sẵn cho module 
 
 | 版本    | 发布日期   | 下载 |
 |---------|------------|------|
+| [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![下载 1.1](https://img.shields.io/badge/下载-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
+| [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![下载 1.0](https://img.shields.io/badge/下载-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
+
+*(此表使用 GitHub Actions 动态生成。)*
 | [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![下载 1.1](https://img.shields.io/badge/下载-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
 | [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![下载 1.0](https://img.shields.io/badge/下载-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
 
