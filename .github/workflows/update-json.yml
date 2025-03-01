@@ -31,19 +31,17 @@ jobs:
             \"changelog\": \"${CHANGELOG}\"
           }" > update.json
 
-      - name: Configure Git
+      - name: Commit and push update.json
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Pull latest changes
-        run: |
-          git pull --rebase https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main || true
-
-      - name: Commit and push update.json
-        run: |
           git add update.json
           git commit -m "Update update.json for $LATEST_TAG" || exit 0
+          
+          # Pull latest changes to avoid conflicts
+          git pull --rebase https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git main
+          
+          # Push the changes
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
