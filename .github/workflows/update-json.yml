@@ -1,8 +1,11 @@
-name: Update Release JSON
+name: Update JSON on Release
 
 on:
   release:
-    types: [published, edited, deleted]
+    types: [created, edited, deleted, published, unpublished, prereleased, released]
+
+permissions:
+  contents: write
 
 jobs:
   update-json:
@@ -11,37 +14,31 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Get latest release info
-        id: release_info
+      - name: Generate update.json
         run: |
-          LATEST_RELEASE=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases/latest)
-          VERSION=$(echo "$LATEST_RELEASE" | jq -r '.tag_name')
-          VERSION_CODE=$(echo "$LATEST_RELEASE" | jq -r '.id')
-          ZIP_URL=$(echo "$LATEST_RELEASE" | jq -r '.assets[0].browser_download_url // ""')
-          CHANGELOG=$(echo "$LATEST_RELEASE" | jq -r '.body // ""')
+          VERSION="${{ github.event.release.tag_name }}"
+          VERSION_CODE=$(git rev-list --count HEAD)
+          ZIP_URL=""
+          CHANGELOG="${{ github.event.release.body }}"
 
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
-          echo "VERSION_CODE=$VERSION_CODE" >> $GITHUB_ENV
-          echo "ZIP_URL=$ZIP_URL" >> $GITHUB_ENV
-          echo "CHANGELOG=$CHANGELOG" >> $GITHUB_ENV
+          jq -n \
+            --arg version "$VERSION" \
+            --argjson versionCode "$VERSION_CODE" \
+            --arg zipUrl "$ZIP_URL" \
+            --arg changelog "$CHANGLOG" \
+            '{version: $version, versionCode: $versionCode, zipUrl: $zipUrl, changelog: $changelog}' > update.json
 
-      - name: Update update.json
-        run: |
-          cat <<EOF > update.json
-          {
-            "version": "${VERSION}",
-            "versionCode": ${VERSION_CODE},
-            "zipUrl": "${ZIP_URL}",
-            "changelog": "${CHANGELOG}"
-          }
-          EOF
-
-      - name: Commit and push changes
+      - name: Commit and push update.json
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
           git add update.json
-          git commit -m "Update update.json for release ${{ env.VERSION }}" || echo "No changes to commit"
-          git push origin HEAD || echo "No changes to push"
+          # Kéo thay đổi từ remote trước khi commit
+          git pull --rebase origin main
+          git diff --staged --quiet || git commit -m "Update update.json for release ${{ github.event.release.tag_name }}"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
