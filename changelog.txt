@@ -1,4 +1,4 @@
-# 🔥 Zygisk AOV Hack - Phiên bản 1.0  
+# 🔥 Zygisk AOV Hack - Phiên bản 1.1 (Patch 1.0)
 
 ![GitHub Release](https://img.shields.io/github/v/release/dvtlive/ZYGISK-AOV-AUTO-UPDATE?style=for-the-badge)  
 ![GitHub Downloads](https://img.shields.io/github/downloads/dvtlive/ZYGISK-AOV-AUTO-UPDATE/latest/total?color=blue&style=for-the-badge)  
@@ -9,9 +9,12 @@
 
 ---
 
-## **🛠 Tính năng trong phiên bản 1.0**  
+## **🛠 Tính năng trong phiên bản vá 1.1**  
 
 ✅ **Hack Map** – Hiển thị toàn bộ tướng địch trên bản đồ (Tự động bật khi vào game)  
+
+🔹 🆕 **Thêm hỗ trợ các server khác:** Chơi ở mọi quốc gia, mọi server
+
 
 🔹 **Cập nhật tự động:** Không cần tải lại thủ công  
 🔹 **Ẩn dấu vết:** Giảm thiểu nguy cơ bị phát hiện  
@@ -31,7 +34,14 @@
 
 | Khu Vực                 | Tên Gói (Package)            |
 |-------------------------|-----------------------------|
+| 🇪🇺 **Châu Âu**        |      |
+| 🇮🇳 **Ấn Độ**         |   |
+| 🇹🇼 **Đài Loan**      |      |
+| 🇹🇭 **Thái Lan**      |      |
 | 🇻🇳 **Việt Nam**      |      |
+| 🇯🇵 **Nhật Bản**      |         |
+| 🇸🇬 **Đông Nam Á**    |    |
+| 🇨🇳 **Máy chủ thử nghiệm (Trung Quốc)** |  |
 
 ## ⚠️ Lưu Ý
 - Phiên bản **Honor of Kings** _(王者荣耀)_ không được hỗ trợ.  
@@ -41,6 +51,14 @@
 
 ## **📥 Cách cài đặt**  
 
+ℹ️ **Nếu bạn đã cài đặt phiên bản trước đó trong magisk thì làm theo các bước sau:**
+   - Mở ứng **Magisk**, vào **Modules**
+   - Tìm đến module đã cài trước đó
+   - Ấn vào **Cập nhật**, Chọn **Download**
+   - Sau khi **Magisk** đã download xong thì nhấn **Cài đặt**
+   - **Reboot** thiết bị và trải nghiệm phiên bản mới
+ 
+**Dành cho người chưa cài đặt phiên bản nào trước đó:**
 1️⃣ **Tải file hack mới nhất:**  
    👉 [Download Now](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/latest/)  
 
