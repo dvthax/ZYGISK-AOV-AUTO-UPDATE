@@ -3,7 +3,7 @@
 
 ![GitHub stars](https://img.shields.io/github/stars/dvtlive/ZYGISK-AOV-AUTO-UPDATE?style=social)  
 ![GitHub forks](https://img.shields.io/github/forks/dvtlive/ZYGISK-AOV-AUTO-UPDATE?style=social)  
-![GitHub downloads](https://img.shields.io/github/downloads/dvtlive/ZYGISK-AOV-AUTO-UPDATE/total.svg)  
+[![GitHub downloads](https://img.shields.io/github/downloads/dvtlive/ZYGISK-AOV-AUTO-UPDATE/total.svg)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/latest)
 
 ---
 
