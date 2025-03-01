@@ -23,7 +23,7 @@ jobs:
           VERSION="${{ github.event.release.tag_name }}"
           VERSION_CODE=$(git rev-list --count HEAD)
           ZIP_URL="https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/${VERSION}/DVTMOD-ZYGISK-${VERSION}.zip"
-          CHANGELOG_URL="https://raw.githubusercontent.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/main/changelog.txt"
+          CHANGELOG_URL="https://raw.githubusercontent.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/refs/heads/main/changelog.txt"
 
           # Lưu nội dung changelog dạng raw text vào changelog.txt
           echo "${{ github.event.release.body }}" > changelog.txt
