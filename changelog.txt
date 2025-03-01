@@ -52,10 +52,10 @@
 ## **📥 Cách cài đặt**  
 
 ℹ️ **Nếu bạn đã cài đặt phiên bản trước đó trong magisk thì làm theo các bước sau:**
-   - Mở ứng **Magisk**, vào **Modules**
+   - Mở ứng dụng **Magisk**, vào **Modules**
    - Tìm đến module đã cài trước đó
-   - Ấn vào **Cập nhật**, Chọn **Download**
-   - Sau khi **Magisk** đã download xong thì nhấn **Cài đặt**
+   - Ấn vào **Cập nhật**, Chọn **Cài đặt**
+   - Đợi một lúc để **Magisk** tải phiên bản mới nhất về và cài đặt
    - **Reboot** thiết bị và trải nghiệm phiên bản mới
  
 **Dành cho người chưa cài đặt phiên bản nào trước đó:**
