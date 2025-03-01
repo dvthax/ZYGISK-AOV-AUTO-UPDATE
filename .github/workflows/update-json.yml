@@ -1,5 +1,4 @@
 name: Generate update.json on Release
-
 on:
   release:
     types: [published]
