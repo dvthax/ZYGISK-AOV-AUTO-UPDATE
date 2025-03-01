@@ -1,0 +1,31 @@
+name: Generate update.json
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  generate-update-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get latest release info
+        id: release_info
+        run: |
+          LATEST_TAG=$(git describe --tags --abbrev=0)
+          VERSION_CODE=$(date +%s)
+          ZIP_URL="https://github.com/${{ github.repository }}/releases/latest/download/zygisk-detach-${LATEST_TAG}.zip"
+          CHANGELOG="https://raw.githubusercontent.com/${{ github.repository }}/master/README.md"
+          
+          echo "{ \"version\": \"${LATEST_TAG}\", \"versionCode\": ${VERSION_CODE}, \"zipUrl\": \"${ZIP_URL}\", \"changelog\": \"${CHANGELOG}\" }" > update.json
+
+      - name: Commit and push update.json
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add update.json
+          git commit -m "Update update.json for ${{ github.event.release.tag_name }}"
+          git push
