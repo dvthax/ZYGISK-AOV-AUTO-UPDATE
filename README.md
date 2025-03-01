@@ -20,6 +20,8 @@
 - **Fast** – No need for manual checks, everything is always up-to-date.  
 - **Easy to use** – Friendly interface, just one click.  
 - **Safe & Stable** – Runs smoothly on Zygisk, optimized for performance.  
+- **Full compatibility** – Supports **both 32-bit & 64-bit versions** of AOV.  
+- **Works on all servers** – Supports **Vietnam, Thailand, Taiwan, and more**.  
 
 ### 📥 Installation  
 #### ✅ Requirements  
@@ -37,7 +39,7 @@
 ✅ No manual work needed!  
 
 ### 🚀 Support & Contact  
-📢 Telegram: [@dvt101](https://t.me/dvt101)  
+📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
 🌍 Github: [dvtlive](https://github.com/dvtlive)  
 
 ### 💖 Donate  
@@ -62,6 +64,8 @@ If you find this project useful, you can support me via:
 - **Nhanh chóng** – Không cần kiểm tra thủ công, mọi thứ luôn được cập nhật mới nhất.  
 - **Dễ sử dụng** – Giao diện thân thiện, chỉ cần một cú nhấp chuột.  
 - **An toàn & Ổn định** – Chạy mượt mà trên Zygisk, tối ưu hóa hiệu suất.  
+- **Tương thích đầy đủ** – Hỗ trợ **cả phiên bản 32-bit & 64-bit** của AOV.  
+- **Hoạt động trên mọi máy chủ** – Hỗ trợ **Việt Nam, Thái Lan, Đài Loan và nhiều hơn nữa**.  
 
 ### 📥 Cài đặt  
 #### ✅ Yêu cầu  
@@ -79,7 +83,7 @@ If you find this project useful, you can support me via:
 ✅ Bạn không cần làm gì cả!  
 
 ### 🚀 Hỗ trợ & Liên hệ  
-📢 Telegram: [@dvt101](https://t.me/dvt101)  
+📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
 🌍 Github: [dvtlive](https://github.com/dvtlive)  
 
 ### 💖 Ủng hộ  
@@ -104,6 +108,8 @@ Nếu bạn thấy dự án này hữu ích, hãy ủng hộ mình qua:
 - **快速** – 无需手动检查，一切都保持最新状态。  
 - **易于使用** – 友好的界面，只需一键操作。  
 - **安全 & 稳定** – 在 Zygisk 上流畅运行，优化性能。  
+- **完全兼容** – 支持 **AOV 的 32 位和 64 位版本**。  
+- **适用于所有服务器** – 支持 **越南、泰国、台湾等**。  
 
 ### 📥 安装  
 #### ✅ 要求  
@@ -121,7 +127,7 @@ Nếu bạn thấy dự án này hữu ích, hãy ủng hộ mình qua:
 ✅ 无需手动操作！  
 
 ### 🚀 支持与联系  
-📢 Telegram: [@dvt101](https://t.me/dvt101)  
+📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
 🌍 Github: [dvtlive](https://github.com/dvtlive)  
 
 ### 💖 捐赠  
