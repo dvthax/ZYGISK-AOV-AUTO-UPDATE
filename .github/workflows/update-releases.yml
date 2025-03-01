@@ -67,12 +67,13 @@ jobs:
           }; d; }' README.md
           cat README.md
 
-      - name: Commit Changes
+      - name: Commit and Push Changes
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
           git add README.md
           git commit -m "Update releases tables for all languages - Triggered by ${GITHUB_EVENT_NAME}" || echo "No changes to commit"
+          git pull --rebase # Kéo thay đổi từ remote và rebase commit của chúng ta
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
