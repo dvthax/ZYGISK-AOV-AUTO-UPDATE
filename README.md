@@ -64,7 +64,14 @@ This application supports various versions of Arena of Valor (AOV) from differen
 ### Releases  
 Below is a table listing the available releases for the **Zygisk AOV Auto Update** module, dynamically fetched from the GitHub repository. Click on the version number to view release details or use the download button to get the module file directly.  
 
-#### 📦 Releases Table  
+#### 📦 Releases Table
+
+| Version | Release Date | Download |
+|---------|--------------|----------|
+| [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![Download 1.1](https://img.shields.io/badge/Download-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
+| [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Download 1.0](https://img.shields.io/badge/Download-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
+
+*This table is dynamically generated using GitHub Actions.*
 
 ---
 
@@ -118,7 +125,14 @@ Module này cung cấp **hack AOV mạnh mẽ** trên **Zygisk**, giúp bạn s�
 ### Các Bản Phát Hành  
 Dưới đây là bảng liệt kê các bản phát hành có sẵn cho module **Zygisk AOV Auto Update**, được tự động lấy từ kho lưu trữ GitHub. Nhấp vào số phiên bản để xem chi tiết bản phát hành hoặc sử dụng nút tải xuống để lấy tệp module trực tiếp.  
 
-#### 📦 Bảng Các Bản Phát Hành  
+#### 📦 Bảng Các Bản Phát Hành
+
+| Phiên bản | Ngày phát hành | Tải xuống |
+|-----------|----------------|----------|
+| [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![Tải xuống 1.1](https://img.shields.io/badge/Tải_xuống-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
+| [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Tải xuống 1.0](https://img.shields.io/badge/Tải_xuống-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
+
+*(Bảng này được tạo tự động bằng GitHub Actions.)*
 
 ---
 
@@ -172,6 +186,13 @@ Dưới đây là bảng liệt kê các bản phát hành có sẵn cho module 
 ### 版本发布  
 以下是 **Zygisk AOV Auto Update** 模块的可用版本列表，从 GitHub 仓库中动态获取。点击版本号查看发布详情，或使用下载按钮直接获取模块文件。  
 
-#### 📦 版本发布表  
+#### 📦 版本发布表
+
+| 版本    | 发布日期   | 下载 |
+|---------|------------|------|
+| [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![下载 1.1](https://img.shields.io/badge/下载-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
+| [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![下载 1.0](https://img.shields.io/badge/下载-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
+
+*(此表使用 GitHub Actions 动态生成。)*
 
 ---
