@@ -4,7 +4,7 @@
 //
 
 #include "Includes/obfuscate.h"
-#include "Il2cpp.h"
+#include "Il2Cpp.h"
 
 #define targetLib OBFUSCATE("libil2cpp.so")
 #define g_LogTag OBFUSCATE("IL2CPP-LOGGER")
