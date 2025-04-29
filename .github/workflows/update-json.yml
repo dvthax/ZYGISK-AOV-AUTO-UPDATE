@@ -27,8 +27,8 @@ jobs:
           MINOR=$(echo "$VERSION_CLEAN" | cut -d'.' -f2)
           # Tính versionCode: MAJOR * 10 + MINOR
           VERSION_CODE=$((MAJOR * 10 + MINOR))
-          ZIP_URL="https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/${VERSION}/DVTMOD-ZYGISK-${VERSION}.zip"
-          CHANGELOG_URL="https://raw.githubusercontent.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/refs/heads/main/changelog.txt"
+          ZIP_URL="https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/download/${VERSION}/DVTMOD-ZYGISK-${VERSION}.zip"
+          CHANGELOG_URL="https://raw.githubusercontent.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/refs/heads/main/changelog.txt"
 
           # Lưu nội dung changelog dạng raw text vào changelog.txt
           echo "${{ github.event.release.body }}" > changelog.txt
