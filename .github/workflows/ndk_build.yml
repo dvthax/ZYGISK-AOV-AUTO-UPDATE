@@ -23,5 +23,7 @@ jobs:
     - name: Build native code with ndk-build
       run: |
         export NDK_HOME=$ANDROID_SDK_ROOT/ndk/25.2.9519653
-        $NDK_HOME/ndk-build NDK_PROJECT_PATH=./jni
-        
+        $NDK_HOME/ndk-build \
+          APP_BUILD_SCRIPT=./jni/Android.mk \
+          NDK_APPLICATION_MK=./jni/Application.mk \
+          APP_PLATFORM=android-21
