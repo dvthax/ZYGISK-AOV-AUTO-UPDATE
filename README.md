@@ -1,9 +1,9 @@
 # 🌟 Zygisk AOV Auto Update 🌟  
 🚀 **Automatically update AOV Hack on Zygisk easily and quickly!**  
 
-![GitHub stars](https://img.shields.io/github/stars/dvtlive/ZYGISK-AOV-AUTO-UPDATE?style=social)  
-![GitHub forks](https://img.shields.io/github/forks/dvtlive/ZYGISK-AOV-AUTO-UPDATE?style=social)  
-[![GitHub downloads](https://img.shields.io/github/downloads/dvtlive/ZYGISK-AOV-AUTO-UPDATE/total.svg)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/latest)
+![GitHub stars](https://img.shields.io/github/stars/dvthax/ZYGISK-AOV-AUTO-UPDATE?style=social)  
+![GitHub forks](https://img.shields.io/github/forks/dvthax/ZYGISK-AOV-AUTO-UPDATE?style=social)  
+[![GitHub downloads](https://img.shields.io/github/downloads/dvthax/ZYGISK-AOV-AUTO-UPDATE/total.svg)](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/latest)
 
 ---
 
@@ -33,14 +33,14 @@ This module provides **a powerful hack for AOV** on **Zygisk**, allowing you to 
 - **Zygisk** enabled  
 
 #### 🔧 Steps  
-1️⃣ Download **Zygisk AOV Auto Update** module from [Releases](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases)  
+1️⃣ Download **Zygisk AOV Auto Update** module from [Releases](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases)  
 2️⃣ Install the module via **Magisk**  
 3️⃣ Reboot your device  
 4️⃣ Enjoy **AOV Hack with auto-updates!**  
 
 ### 🚀 Support & Contact  
 📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
-🌍 Github: [dvtlive](https://github.com/dvtlive)  
+🌍 Github: [dvthax](https://github.com/dvthax)  
 
 ### Supported Servers List - Arena of Valor (AOV)  
 This application supports various versions of Arena of Valor (AOV) from different regions. Below is the list of supported servers:  
@@ -68,8 +68,8 @@ Below is a table listing the available releases for the **Zygisk AOV Auto Update
 
 | Version | Release Date | Download |
 |---------|--------------|----------|
-| [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![Download 1.1](https://img.shields.io/badge/Download-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
-| [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Download 1.0](https://img.shields.io/badge/Download-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
+| [1.1](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![Download 1.1](https://img.shields.io/badge/Download-1.1-green)](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
+| [1.0](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Download 1.0](https://img.shields.io/badge/Download-1.0-green)](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
 
 *This table is dynamically generated using GitHub Actions.*
 ---
@@ -93,14 +93,14 @@ Module này cung cấp **hack AOV mạnh mẽ** trên **Zygisk**, giúp bạn s�
 - Đã bật **Zygisk**  
 
 #### 🔧 Hướng dẫn  
-1️⃣ Tải về module **Zygisk AOV Auto Update** từ [Releases](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases)  
+1️⃣ Tải về module **Zygisk AOV Auto Update** từ [Releases](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases)  
 2️⃣ Cài đặt module thông qua **Magisk**  
 3️⃣ Khởi động lại thiết bị  
 4️⃣ Tận hưởng **Hack AOV tự động cập nhật!**  
 
 ### 🚀 Hỗ trợ & Liên hệ  
 📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
-🌍 Github: [dvtlive](https://github.com/dvtlive)  
+🌍 Github: [dvthax](https://github.com/dvthax)  
 
 ### Danh Sách Server Hỗ Trợ - Arena of Valor (AOV)  
 Ứng dụng này hỗ trợ các phiên bản Arena of Valor (AOV) từ nhiều khu vực khác nhau. Dưới đây là danh sách các server được phép sử dụng:  
@@ -128,8 +128,8 @@ Dưới đây là bảng liệt kê các bản phát hành có sẵn cho module 
 
 | Phiên bản | Ngày phát hành | Tải xuống |
 |-----------|----------------|----------|
-| [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![Tải xuống 1.1](https://img.shields.io/badge/Tải_xuống-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
-| [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Tải xuống 1.0](https://img.shields.io/badge/Tải_xuống-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
+| [1.1](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![Tải xuống 1.1](https://img.shields.io/badge/Tải_xuống-1.1-green)](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
+| [1.0](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![Tải xuống 1.0](https://img.shields.io/badge/Tải_xuống-1.0-green)](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
 
 *(Bảng này được tạo tự động bằng GitHub Actions.)*
 ---
@@ -153,14 +153,14 @@ Dưới đây là bảng liệt kê các bản phát hành có sẵn cho module 
 - 启用了 **Zygisk**  
 
 #### 🔧 安装步骤  
-1️⃣ 从 [Releases](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases) 下载 **Zygisk AOV Auto Update** 模块  
+1️⃣ 从 [Releases](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases) 下载 **Zygisk AOV Auto Update** 模块  
 2️⃣ 通过 **Magisk** 安装该模块  
 3️⃣ 重新启动设备  
 4️⃣ 享受 **自动更新的 AOV外挂！**  
 
 ### 🚀 支持与联系  
 📢 Telegram: [@dvt1015](https://t.me/dvt1015)  
-🌍 Github: [dvtlive](https://github.com/dvtlive)  
+🌍 Github: [dvthax](https://github.com/dvthax)  
 
 ### 支持的服务器列表 - Arena of Valor (AOV)  
 此应用程序支持来自不同地区的多种 Arena of Valor (AOV) 版本。以下是支持的服务器列表：  
@@ -188,8 +188,8 @@ Dưới đây là bảng liệt kê các bản phát hành có sẵn cho module 
 
 | 版本    | 发布日期   | 下载 |
 |---------|------------|------|
-| [1.1](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![下载 1.1](https://img.shields.io/badge/下载-1.1-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
-| [1.0](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![下载 1.0](https://img.shields.io/badge/下载-1.0-green)](https://github.com/dvtlive/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
+| [1.1](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.1) | 2025-03-01 | [![下载 1.1](https://img.shields.io/badge/下载-1.1-green)](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.1/DVTMOD-ZYGISK-1.1.zip) |
+| [1.0](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/tag/1.0) | 2025-03-01 | [![下载 1.0](https://img.shields.io/badge/下载-1.0-green)](https://github.com/dvthax/ZYGISK-AOV-AUTO-UPDATE/releases/download/1.0/DVTMOD-ZYGISK-1.0.zip) |
 
 *(此表使用 GitHub Actions 动态生成。)*
 ---
