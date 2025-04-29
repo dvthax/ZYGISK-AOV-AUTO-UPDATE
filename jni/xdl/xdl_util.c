@@ -81,7 +81,7 @@ end:
   return (api_level > 0) ? api_level : -1;
 }
 
-#if !defined(android_get_device_api_level)
+#ifndef __BIONIC__
 
 int android_get_device_api_level() {
     char sdk_version[PROP_VALUE_MAX] = {0};  // PROP_VALUE_MAX thường là 92
