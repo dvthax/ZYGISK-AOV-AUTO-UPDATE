@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Install Android SDK & NDK
-      uses: uses: android-actions/setup-android@v3
+      uses: android-actions/setup-android@v3
 
     - name: Install specific NDK version
       run: sdkmanager "ndk;25.2.9519653"
