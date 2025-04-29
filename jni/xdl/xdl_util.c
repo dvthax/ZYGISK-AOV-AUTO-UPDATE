@@ -81,6 +81,7 @@ end:
   return (api_level > 0) ? api_level : -1;
 }
 
+#if !defined(android_get_device_api_level)
 int android_get_device_api_level() {
     char sdk_version[PROP_VALUE_MAX] = {0};  // PROP_VALUE_MAX thường là 92
     if (__system_property_get("ro.build.version.sdk", sdk_version) > 0) {
@@ -88,6 +89,9 @@ int android_get_device_api_level() {
     }
     return -1;  // Trả về -1 nếu không lấy được API level
 }
+#endif
+
+
 
 int xdl_util_get_api_level(void) {
   static int xdl_util_api_level = -1;
