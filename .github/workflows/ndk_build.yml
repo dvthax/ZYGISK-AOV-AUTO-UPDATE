@@ -1,0 +1,27 @@
+name: NDK C++ Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ndk-build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install Android SDK & NDK
+      uses: android-actions/setup-android@v3
+
+    - name: Install specific NDK version
+      run: sdkmanager "ndk;25.2.9519653"
+
+    - name: Build native code with ndk-build
+      run: |
+        export NDK_HOME=$ANDROID_SDK_ROOT/ndk/25.2.9519653
+        $NDK_HOME/ndk-build NDK_PROJECT_PATH=./jni
+        
